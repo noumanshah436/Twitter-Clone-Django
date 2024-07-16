@@ -1,0 +1,24 @@
+pyenv local 3.12.3
+python --version
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+
+********************************************
+
+pip install pillow
+pip install djangorestframework
+python manage.py makemigrations
+pip install crispy_forms
+pip install django-crispy-forms
+
+python manage.py runserver
+pip install whitenoise
+python manage.py runserver
+pip install crispy-bootstrap4
+python manage.py runserver
+
+pip freeze > requirements.txt
+python manage.py runserver
