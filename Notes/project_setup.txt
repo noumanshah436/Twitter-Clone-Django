@@ -22,3 +22,10 @@ python manage.py runserver
 
 pip freeze > requirements.txt
 python manage.py runserver
+
+*************************************************
+
+python manage.py createsuperuser
+Username (leave blank to use 'dev'): admin
+Email address: admin@gmail.com
+Password: admin
